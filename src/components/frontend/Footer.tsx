@@ -36,7 +36,7 @@ const Footer = () => {
                             <span className="material-symbols-filled pr-2">
                                 mail
                             </span>
-                            <p className="font-thin">eat@gogoaeatery.co.nz</p>
+                            <p className="font-thin">eat@Zithai.co.nz</p>
                         </a>
                     </div>
                 </div>
@@ -64,8 +64,8 @@ const Footer = () => {
                     <div>
                         <p className="text-lg font-bold pb-4">FOLLOW ALONG</p>
                         <div className="flex justify-center space-x-4 text-lg">
-                            <Link href="https://www.facebook.com/gogoaeatery/" className="hover:text-[#C7A17A]"><FontAwesomeIcon icon={faFacebook} /></Link>
-                            <Link href="https://www.instagram.com/gogoaeatery/" className="hover:text-[#C7A17A]"><FontAwesomeIcon icon={faInstagram} /></Link>
+                            <Link href="https://www.facebook.com/Zithai/" className="hover:text-[#C7A17A]"><FontAwesomeIcon icon={faFacebook} /></Link>
+                            <Link href="https://www.instagram.com/Zithai/" className="hover:text-[#C7A17A]"><FontAwesomeIcon icon={faInstagram} /></Link>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ const Footer = () => {
                 <div className="mx-auto w-4/5 flex flex-col xl:flex-row flex-wrap justify-between items-center p-4 text-white">
                     <div className="font-thin text-xs tracking-wider">© 2024 Zithai. ALL RIGHTS RESERVED</div>
                     <p className="text-md font-medium tracking-widest flex justify-center py-4 xl:py-0">Zithai</p>
-                    <a className="font-thin text-xs tracking-wider hover:text-[#C7A17A] flex justify-end" rel="noopener" href="https://github.com/BlakeFernandes/gogoaeatery-website/" target="_blank">{process.env.VERCEL_GIT_COMMIT_SHA?.substring(0, 7) ?? "development"}</a>
+                    <a className="font-thin text-xs tracking-wider hover:text-[#C7A17A] flex justify-end" rel="noopener" href="https://github.com/BlakeFernandes/Zithai-website/" target="_blank">{process.env.VERCEL_GIT_COMMIT_SHA?.substring(0, 7) ?? "development"}</a>
                 </div>
             </div>
         </footer>

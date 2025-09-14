@@ -30,7 +30,7 @@ const Catering = () => {
                 footer={
                     <div>
                         <p>Phone: +09 445 4173</p>
-                        <p>Email: eat@gogoaeatery.co.nz</p>
+                        <p>Email: eat@Zithai.co.nz</p>
                         <p>Address: 3/18 Clarence Street, Devonport, Auckland, New Zealand</p>
                     </div>
                 }

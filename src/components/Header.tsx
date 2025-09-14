@@ -28,17 +28,17 @@ export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) 
                         </span>
                         09 445 4173
                     </Link>
-                    <Link className="items-center hover:text-[#C7A17A] hidden xl:flex" href="mailto:eat@gogoaeatery.co.nz">
+                    <Link className="items-center hover:text-[#C7A17A] hidden xl:flex" href="mailto:eat@Zithai.co.nz">
                         <span className="material-symbols-filled pr-2">
                             mail
                         </span>
-                        eat@gogoaeatery.co.nz
+                        eat@Zithai.co.nz
                     </Link>
                 </div>
                 <div className="space-x-4 flex text-[1rem] items-center">
                     {/* <NavCart /> */}
-                    <Link href="https://www.facebook.com/gogoaeatery/" className="hidden xl:block"><FontAwesomeIcon icon={faFacebook} /></Link>
-                    <Link href="https://www.instagram.com/gogoaeatery/" className="hidden xl:block"><FontAwesomeIcon icon={faInstagram} /></Link>
+                    <Link href="https://www.facebook.com/Zithai/" className="hidden xl:block"><FontAwesomeIcon icon={faFacebook} /></Link>
+                    <Link href="https://www.instagram.com/Zithai/" className="hidden xl:block"><FontAwesomeIcon icon={faInstagram} /></Link>
                 </div>
             </div>
 
@@ -68,17 +68,17 @@ const Header = (props: { title?: string, heroImg: StaticImageData }) => {
                         </span>
                         09 445 4173
                     </Link>
-                    <Link className="items-center hover:text-[#C7A17A] hidden xl:flex" href="mailto:eat@gogoaeatery.co.nz">
+                    <Link className="items-center hover:text-[#C7A17A] hidden xl:flex" href="mailto:eat@Zithai.co.nz">
                         <span className="material-symbols-filled pr-2">
                             mail
                         </span>
-                        eat@gogoaeatery.co.nz
+                        eat@Zithai.co.nz
                     </Link>
                 </div>
                 <div className="space-x-4 flex text-[1rem] items-center">
                     {/* <NavCart /> */}
-                    <Link href="https://www.facebook.com/gogoaeatery/" className="hidden xl:block"><FontAwesomeIcon icon={faFacebook} /></Link>
-                    <Link href="https://www.instagram.com/gogoaeatery/" className="hidden xl:block"><FontAwesomeIcon icon={faInstagram} /></Link>
+                    <Link href="https://www.facebook.com/Zithai/" className="hidden xl:block"><FontAwesomeIcon icon={faFacebook} /></Link>
+                    <Link href="https://www.instagram.com/Zithai/" className="hidden xl:block"><FontAwesomeIcon icon={faInstagram} /></Link>
                 </div>
             </div>
 

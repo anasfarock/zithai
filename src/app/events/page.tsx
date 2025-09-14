@@ -27,7 +27,7 @@ const Catering = () => {
                 title="We Host Events"
                 subtitle="We are proud to host many events at Zithai."
                 description={[
-                    "For more information about hosting your event at Zithai, please contact us at eat@gogoaeatery.co.nz",
+                    "For more information about hosting your event at Zithai, please contact us at eat@Zithai.co.nz",
                 ]}
                 footer={
                     <>
