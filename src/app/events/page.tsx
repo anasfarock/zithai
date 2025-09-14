@@ -13,21 +13,21 @@ import Hero from "@/images/devonport-hero.png";
 import { TextSection } from "~/components/frontend/ui/section";
 
 export const metadata = {
-    title: "Go Goa Eatery - Menu",
-    description: "Nestled in the heart of Devonport, Go Goa Eatery is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine.",
+    title: "Zithai - Menu",
+    description: "Nestled in the heart of Devonport, Zithai is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine.",
     icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
 const Catering = () => {
     return (
         <>
-            <Header title="Go Goa Eatery Events" heroImg={Hero} />
+            <Header title="Zithai Events" heroImg={Hero} />
 
             <TextSection
                 title="We Host Events"
-                subtitle="We are proud to host many events at Go Goa Eatery."
+                subtitle="We are proud to host many events at Zithai."
                 description={[
-                    "For more information about hosting your event at Go Goa Eatery, please contact us at eat@gogoaeatery.co.nz",
+                    "For more information about hosting your event at Zithai, please contact us at eat@gogoaeatery.co.nz",
                 ]}
                 footer={
                     <>

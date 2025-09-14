@@ -12,7 +12,7 @@ import Link from "next/link";
 import { buttonVariants } from "~/components/frontend/ui/button";
 
 export const metadata = {
-    title: "Go Goa Eatery | Corporate, BBQ, Party Catering Service Auckland",
+    title: "Zithai | Corporate, BBQ, Party Catering Service Auckland",
     description: "Brining India's tastes to Auckland's festives. Auckland's best authentic Indian catering service.",
     icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
@@ -20,8 +20,8 @@ export const metadata = {
 const Catering = () => {
     return (
         <>
-            <Header title="Go Goa Eatery Catering" heroImg={Hero}/>
-            
+            <Header title="Zithai Catering" heroImg={Hero} />
+
             <CateringAbout />
 
             <div className="w-full flex justify-center items-center pb-12 space-x-2">

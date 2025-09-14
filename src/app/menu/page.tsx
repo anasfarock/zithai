@@ -12,8 +12,8 @@ import MenuCard, { Menu } from "~/components/frontend/MenuCard";
 import Hero from "@/images/hero-1.jpg";
 
 export const metadata = {
-    title: "Go Goa Eatery - Menu",
-    description: "Nestled in the heart of Devonport, Go Goa Eatery is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine.",
+    title: "Zithai - Menu",
+    description: "Nestled in the heart of Devonport, Zithai is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine.",
     icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

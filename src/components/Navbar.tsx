@@ -35,7 +35,7 @@ export default function NavBar(props: { primary?: boolean, className?: string })
                                             <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                                         )}
                                     </Disclosure.Button>
-                                    <p className="text-2xl font-medium tracking-wider">GO GOA EATERY</p>
+                                    <p className="text-2xl font-medium tracking-wider">Zithai</p>
                                 </div>
                                 <Disclosure.Panel className="xl:hidden w-full h-full my-4">
                                     <div className="space-y-1 px-2 pb-3 pt-2 bg-white rounded-md">
@@ -63,7 +63,7 @@ export default function NavBar(props: { primary?: boolean, className?: string })
                                     <Link href="/events" className="text-sm font-normal tracking-wide leading-6 text-white">EVENTS</Link>
                                     <Link href="/store" className="text-sm font-normal tracking-wide leading-6 text-white">STORE</Link>
                                 </div>
-                                <p className="flex-1 text-center text-2xl font-medium tracking-wider">{props?.primary ?? "GO GOA EATERY"}</p>
+                                <p className="flex-1 text-center text-2xl font-medium tracking-wider">{props?.primary ?? "Zithai"}</p>
                                 <div className="space-x-8 hidden xl:flex">
                                     <Link href="/about" className="text-sm font-normal tracking-wide leading-6 text-white">ABOUT</Link>
                                     <Link href="/menu" className="text-sm font-normal tracking-wide leading-6 text-white">MENUS</Link>

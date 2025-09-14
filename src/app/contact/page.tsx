@@ -13,8 +13,8 @@ import Hero from "@/images/hero-4.jpg";
 import { TextSection } from "~/components/frontend/ui/section";
 
 export const metadata = {
-    title: "Go Goa Eatery | Contact Us",
-    description: "Nestled in the heart of Devonport, Go Goa Eatery is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine.",
+    title: "Zithai | Contact Us",
+    description: "Nestled in the heart of Devonport, Zithai is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine.",
     icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

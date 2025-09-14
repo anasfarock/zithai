@@ -45,7 +45,7 @@ export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) 
             <header
                 className="relative overflow-hidden bg-cover bg-no-repeat block"
             >
-                <NavBar className="bg-black"/>
+                <NavBar className="bg-black" />
             </header>
         </>
     );
@@ -101,16 +101,16 @@ const Header = (props: { title?: string, heroImg: StaticImageData }) => {
                             alt="Logo Icon"
                             height={180}
                         />
-                        <h1 className="text-[80px] w-full font-playlist pb-6">{props.title ? props.title : "Go Goa Eatery"}</h1>
+                        <h1 className="text-[80px] w-full font-playlist pb-6">{props.title ? props.title : "Zithai"}</h1>
                         <div className="space-x-6">
-                            <Link className={buttonVariants({ variant: "outline", size:"lg"  })} href="/menu">SEE MENU</Link>
+                            <Link className={buttonVariants({ variant: "outline", size: "lg" })} href="/menu">SEE MENU</Link>
                             {/* <Link className={buttonVariants({ variant: "outline", size: "lg" })} href="/reservations">BOOK YOUR TABLE</Link> */}
                         </div>
                     </div>
                 </nav>
             </header>
 
-            <div className="relative z-10">  
+            <div className="relative z-10">
                 <div className="absolute bottom-0 left-0 w-full">
                     <Image
                         src={PaperSvg}

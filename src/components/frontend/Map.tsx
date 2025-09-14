@@ -11,7 +11,7 @@ export default function Map() {
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Go Goa Eatery Location - Devonport, Auckland"
+                title="Zithai Location - Devonport, Auckland"
             />
         </div>
     );

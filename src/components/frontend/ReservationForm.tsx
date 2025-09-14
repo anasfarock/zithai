@@ -37,7 +37,7 @@ const FormSchema = z.object({
     ocassion: z.string(),
 })
 
-export const ReservationForm = ({ 
+export const ReservationForm = ({
     selectedDate,
     selectedTime,
     selectedPeople,
@@ -61,9 +61,9 @@ export const ReservationForm = ({
     })
 
     function onSubmit(data: z.infer<typeof FormSchema>) {
-        
+
         console.log('here')
-        
+
         const fullData = {
             ...data,
             selectedPeople,
@@ -77,7 +77,7 @@ export const ReservationForm = ({
             <form onSubmit={form.handleSubmit(onSubmit)}>
                 <div className="bg-white p-4 space-y-6">
                     <div className="flex justify-between items-center">
-                        <p className="text-xl font-semibold">Reservation at Go Goa Eatery</p>
+                        <p className="text-xl font-semibold">Reservation at Zithai</p>
                         <button onClick={() => setIsModalOpen(false)}>
                             <i className="la la-lg la-close" />
                         </button>
@@ -195,7 +195,7 @@ export const ReservationForm = ({
     );
 }
 
-export const ReservationSelection = ({ 
+export const ReservationSelection = ({
     selectedPeople,
     selectedTime,
     selectedDate,

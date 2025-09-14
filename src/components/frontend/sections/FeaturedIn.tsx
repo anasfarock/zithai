@@ -17,7 +17,7 @@ const FeaturedIn = () => {
                                 FEATURED IN
                             </h2>
                             <div className="flex justify-center items-center space-x-4">
-                                <a href="https://www.thepost.co.nz/culture/350124850/goa-we-are-all-catholic-so-we-eat-everything-except-chairs-andtables" title="Sunday Times - Go Goa Eatery" rel="noopener" target="_blank">
+                                <a href="https://www.thepost.co.nz/culture/350124850/goa-we-are-all-catholic-so-we-eat-everything-except-chairs-andtables" title="Sunday Times - Zithai" rel="noopener" target="_blank">
                                     <Image
                                         src={SundayTimes}
                                         alt="Sunday Times Logo"

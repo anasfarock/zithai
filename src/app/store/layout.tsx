@@ -30,7 +30,7 @@ export const metadata = {
 export default async function RootLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <Header title='Go Goa Eatery Store' heroImg={Hero} />
+      <Header title='Zithai Store' heroImg={Hero} />
       <Suspense>
         <main>{children}</main>
       </Suspense>
