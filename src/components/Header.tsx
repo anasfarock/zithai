@@ -1,4 +1,4 @@
-"use server";
+"use client";
 
 import Image, { StaticImageData } from "next/image";
 
@@ -10,10 +10,12 @@ import Link from "next/link";
 import { Button, buttonVariants } from "./frontend/ui/button";
 import NavBar from "./Navbar";
 import NavCart from "./NavCart";
+import { StickyHeader } from "./StickyHeader";
 
 export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) => {
     return (
         <>
+            <StickyHeader />
             <div className="bg-[#171717] text-white text-xs px-16 py-3 flex justify-between">
                 <div className="flex space-x-8">
                     <Link className="items-center flex hover:text-[#C7A17A]" href="https://maps.app.goo.gl/aDk2A5ntDKVtAzSH9" target="_blank">
@@ -54,6 +56,7 @@ export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) 
 const Header = (props: { title?: string, heroImg: StaticImageData }) => {
     return (
         <>
+            <StickyHeader />
             <div className="bg-[#1A191B] text-white text-xs px-16 py-3 flex justify-between">
                 <div className="flex space-x-8">
                     <Link className="items-center flex hover:text-[#C7A17A]" href="https://maps.app.goo.gl/aDk2A5ntDKVtAzSH9" target="_blank">
