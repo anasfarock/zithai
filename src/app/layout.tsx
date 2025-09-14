@@ -1,11 +1,12 @@
 import "~/styles/globals.scss";
+import '~/lib/fontawesome'; // Import FontAwesome configuration
 
 import React from 'react';
 import localFont from "next/font/local";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from "next/script";
-import { dom } from "@fortawesome/fontawesome-svg-core";
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 const inter = localFont({
     src: [
@@ -33,7 +34,6 @@ export default function RootLayout({
     return (
         <html lang="en" className="font-sans ${inter.variable} bg-[#F7F7F7]">
             <head>
-                <style type="text/css">{dom.css()}</style>
             </head>
             <body>
                 {children}
