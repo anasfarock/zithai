@@ -31,7 +31,7 @@ const Catering = () => {
                     <div>
                         <p>Phone: ++123 456 789</p>
                         <p>Email: contact@zithai.in</p>
-                        <p>Address: 3/18 Clarence Street, , Auckland, New Zealand</p>
+                        <p>Address: Zithai, Dehli, India 12345</p>
                     </div>
                 }
             />
