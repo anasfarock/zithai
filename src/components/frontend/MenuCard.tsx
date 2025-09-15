@@ -54,7 +54,7 @@ export const Menu = () => {
                     </>
                 }
             />
-            <div className="mx-auto max-w-screen-2xl py-8 md:py-12">
+            {/* <div className="mx-auto max-w-screen-2xl py-8 md:py-12">
                 <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 justify-between bg-stone-50 p-12 mb-6">
                     {menuItems.map((menuItem, menuIndex) => (
                         <div key={menuItem.title} className="w-full">
@@ -86,6 +86,91 @@ export const Menu = () => {
                             </svg>
                             Gluten Free
                         </p>
+                    </div>
+                </div>
+            </div> */}
+
+            {/* Cake Cards Section */}
+            <div className="mx-auto max-w-screen-2xl pt-2 pb-8 md:pt-4 md:pb-12">
+                <div className="grid grid-cols-1 gap-8 px-4 sm:px-6 lg:px-8">
+                    {/* Cake Card 1 */}
+                    <div className="bg-[#B8936C] rounded-3xl p-8 md:p-12 text-white">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div className="relative h-96 rounded-2xl overflow-hidden">
+                                <Image
+                                    src="/images/cake-1.png"
+                                    alt="Artisan Chocolate Cake"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="space-y-6">
+                                <h2 className="text-4xl md:text-5xl font-bold text-black">
+                                    Chocolate Delight
+                                </h2>
+                                <p className="text-lg leading-relaxed text-black/80">
+                                    Rich chocolate cake with layers of smooth ganache and fresh berries.
+                                </p>
+                                <p className="text-base leading-relaxed text-black/70">
+                                    Made with premium cocoa and finest ingredients for an unforgettable taste.
+                                </p>
+                                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                                    <Button
+                                        variant="secondary"
+                                        size="lg"
+                                        className="bg-black/10 border-2 border-black/20 text-black hover:bg-black/20 hover:text-black rounded-full"
+                                    >
+                                        Learn More
+                                    </Button>
+                                    <Button
+                                        size="lg"
+                                        className="bg-black text-white hover:bg-black/80 rounded-full"
+                                    >
+                                        Order Now
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Cake Card 2 */}
+                    <div className="bg-[#B8936C] rounded-3xl p-8 md:p-12 text-white">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div className="relative h-96 rounded-2xl overflow-hidden">
+                                <Image
+                                    src="/images/cake-2.png"
+                                    alt="Vanilla Berry Cake"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="space-y-6">
+                                <h2 className="text-4xl md:text-5xl font-bold text-black">
+                                    Berry Bliss
+                                </h2>
+                                <p className="text-lg leading-relaxed text-black/80">
+                                    Light vanilla sponge topped with fresh seasonal berries and cream.
+                                </p>
+                                <p className="text-base leading-relaxed text-black/70">
+                                    A perfect balance of sweetness and freshness in every bite.
+                                </p>
+                                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                                    <Button
+                                        variant="secondary"
+                                        size="lg"
+                                        className="bg-black/10 border-2 border-black/20 text-black hover:bg-black/20 hover:text-black rounded-full"
+                                    >
+                                        Learn More
+                                    </Button>
+                                    <Button
+                                        size="lg"
+                                        className="bg-black text-white hover:bg-black/80 rounded-full"
+                                    >
+                                        Order Now
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
