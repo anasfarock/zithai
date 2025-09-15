@@ -128,13 +128,6 @@ export const Menu = () => {
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                                     <Button
-                                        variant="secondary"
-                                        size="lg"
-                                        className="bg-black/10 border-2 border-black/20 text-black hover:bg-black/20 hover:text-black rounded-full"
-                                    >
-                                        Learn More
-                                    </Button>
-                                    <Button
                                         size="lg"
                                         className="bg-black text-white hover:bg-black/80 rounded-full"
                                     >
@@ -158,13 +151,6 @@ export const Menu = () => {
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                                    <Button
-                                        variant="secondary"
-                                        size="lg"
-                                        className="bg-black/10 border-2 border-black/20 text-black hover:bg-black/20 hover:text-black rounded-full"
-                                    >
-                                        Learn More
-                                    </Button>
                                     <Button
                                         size="lg"
                                         className="bg-black text-white hover:bg-black/80 rounded-full"
@@ -231,13 +217,6 @@ export const Menu = () => {
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                                    <Button
-                                        variant="secondary"
-                                        size="lg"
-                                        className="bg-white/10 border-2 border-white/20 text-white hover:bg-white/20 hover:text-white rounded-full"
-                                    >
-                                        Learn More
-                                    </Button>
                                     <Button
                                         size="lg"
                                         className="bg-white text-black hover:bg-white/80 rounded-full"
