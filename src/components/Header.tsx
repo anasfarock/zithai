@@ -51,7 +51,7 @@ export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) 
     );
 }
 
-const Header = (props: { title?: string, heroImg: StaticImageData }) => {
+const Header = (props: { title?: string }) => {
     return (
         <>
             <StickyHeader />
@@ -85,12 +85,16 @@ const Header = (props: { title?: string, heroImg: StaticImageData }) => {
             <header
                 className="relative overflow-hidden bg-cover bg-no-repeat block"
             >
-                <Image
-                    src={props.heroImg}
-                    alt="Description of the image"
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="block w-full h-[100vh] object-cover"
-                    priority
-                />
+                >
+                    <source src="/videos/hero.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
 
                 <NavBar primary={true} />
 
