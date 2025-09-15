@@ -7,9 +7,9 @@ const AboutUs = () => {
     return (
         <>
             <section>
-                <div className="mx-auto px-4 sm:px-6">
+                <div className="mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="py-8 md:py-12">
-                        <div className="max-w-6xl mx-auto" data-aos-id-tabs="">
+                        <div className="max-w-screen-2xl mx-auto" data-aos-id-tabs="">
                             {/* Header */}
                             <div className="text-center mb-8">
                                 <div className="w-16 mx-auto border-t-2 border-[#C7A17A] pb-2"></div>
