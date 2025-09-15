@@ -56,6 +56,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-poppins)", ...fontFamily.sans],
+        montserrat: ["var(--font-montserrat)", "Montserrat", "sans-serif"],
         oswald: ["Oswald"],
         playlist: ["Playlist Script"],
       },

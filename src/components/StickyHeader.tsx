@@ -31,41 +31,41 @@ export const StickyHeader = ({ className }: StickyHeaderProps) => {
             )}
         >
             {/* Top contact bar */}
-            <div className="bg-[#ffe6af] text-black text-xs px-4 lg:px-16 py-2 flex justify-between shadow-sm">
+            <div className="bg-[#ffe6af] text-black text-xs lg:text-sm px-4 lg:px-16 py-2 lg:py-3 flex justify-between shadow-sm">
                 <div className="flex space-x-4 lg:space-x-8">
                     <Link className="items-center flex hover:text-[#C7A17A] hidden sm:flex" href="https://maps.app.goo.gl/aDk2A5ntDKVtAzSH9" target="_blank">
-                        <span className="material-symbols-filled pr-1 lg:pr-2 text-xs">
+                        <span className="material-symbols-filled pr-1 lg:pr-2 text-xs lg:text-sm">
                             location_on
                         </span>
-                        <span className="hidden lg:inline">3/18 Clarence St, Devonport, Auckland</span>
-                        <span className="lg:hidden">Devonport</span>
+                        <span className="hidden lg:inline font-medium">3/18 Clarence St, Devonport, Auckland</span>
+                        <span className="lg:hidden font-medium">Devonport</span>
                     </Link>
                     <Link className="items-center flex hover:text-[#C7A17A]" href="tel:+094454173">
-                        <span className="material-symbols-filled pr-1 lg:pr-2 text-xs">
+                        <span className="material-symbols-filled pr-1 lg:pr-2 text-xs lg:text-sm">
                             phone_iphone
                         </span>
-                        09 445 4173
+                        <span className="font-medium">09 445 4173</span>
                     </Link>
                 </div>
-                <div className="text-sm font-playlist tracking-wider">
+                <div className="text-sm lg:text-base font-montserrat tracking-wider font-black">
                     Zithai
                 </div>
             </div>
 
             {/* Navigation bar */}
-            <Disclosure as="nav" className="bg-white/95 backdrop-blur-sm text-black px-4 lg:px-16 py-3 border-t border-gray-200">
+            <Disclosure as="nav" className="bg-white/95 backdrop-blur-sm text-black px-4 lg:px-16 py-3 lg:py-4 border-t border-gray-200">
                 {({ open }) => (
                     <>
                         <div className="flex justify-between items-center">
-                            <Link href="/" className="text-xl font-playlist tracking-wider">
+                            <Link href="/" className="text-xl lg:text-2xl font-montserrat tracking-wider font-black">
                                 Zithai
                             </Link>
 
-                            <div className="hidden lg:flex space-x-6">
-                                <Link href="/" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">HOME</Link>
-                                <Link href="/about" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">ABOUT</Link>
-                                <Link href="/menu" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">MENUS</Link>
-                                <Link href="/contact" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">CONTACT</Link>
+                            <div className="hidden lg:flex space-x-6 lg:space-x-10">
+                                <Link href="/" className="text-sm lg:text-base font-medium tracking-wide hover:text-[#C7A17A] transition-colors">HOME</Link>
+                                <Link href="/about" className="text-sm lg:text-base font-medium tracking-wide hover:text-[#C7A17A] transition-colors">ABOUT</Link>
+                                <Link href="/menu" className="text-sm lg:text-base font-medium tracking-wide hover:text-[#C7A17A] transition-colors">MENUS</Link>
+                                <Link href="/contact" className="text-sm lg:text-base font-medium tracking-wide hover:text-[#C7A17A] transition-colors">CONTACT</Link>
                             </div>
 
                             {/* Mobile menu button */}

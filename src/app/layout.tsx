@@ -2,7 +2,7 @@ import "~/styles/globals.scss";
 import '~/lib/fontawesome'; // Import FontAwesome configuration
 
 import React from 'react';
-import { Poppins } from "next/font/google";
+import { Poppins, Montserrat } from "next/font/google";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from "next/script";
@@ -12,6 +12,13 @@ const poppins = Poppins({
     subsets: ['latin'],
     weight: ['300', '400', '500', '600', '700', '800'],
     variable: "--font-poppins",
+    display: 'swap',
+});
+
+const montserrat = Montserrat({
+    subsets: ['latin'],
+    weight: ['400', '500', '600', '700', '800', '900'],
+    variable: "--font-montserrat",
     display: 'swap',
 });
 
@@ -27,7 +34,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={`${poppins.variable} bg-[#F7F7F7]`}>
+        <html lang="en" className={`${poppins.variable} ${montserrat.variable} bg-[#F7F7F7]`}>
             <head>
             </head>
             <body className={poppins.className}>

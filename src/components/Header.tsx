@@ -15,31 +15,31 @@ export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) 
     return (
         <>
             <StickyHeader />
-            <div className="bg-[#171717] text-white text-xs px-4 lg:px-16 py-3 flex justify-between">
+            <div className="bg-[#171717] text-white text-xs lg:text-sm px-4 lg:px-16 py-3 lg:py-4 flex justify-between">
                 <div className="flex space-x-4 lg:space-x-8">
                     <Link className="items-center flex hover:text-[#C7A17A]" href="https://maps.app.goo.gl/aDk2A5ntDKVtAzSH9" target="_blank">
-                        <span className="material-symbols-filled pr-1 lg:pr-2">
+                        <span className="material-symbols-filled pr-1 lg:pr-2 text-sm lg:text-base">
                             location_on
                         </span>
-                        <span className="hidden lg:inline">3/18 Clarence St, Devonport, Auckland</span>
-                        <span className="lg:hidden">Devonport</span>
+                        <span className="hidden lg:inline font-medium">3/18 Clarence St, Devonport, Auckland</span>
+                        <span className="lg:hidden font-medium">Devonport</span>
                     </Link>
                     <Link className="items-center flex hover:text-[#C7A17A]" href="tel:+094454173">
-                        <span className="material-symbols-filled pr-1 lg:pr-2">
+                        <span className="material-symbols-filled pr-1 lg:pr-2 text-sm lg:text-base">
                             phone_iphone
                         </span>
-                        09 445 4173
+                        <span className="font-medium">09 445 4173</span>
                     </Link>
                     <Link className="items-center hover:text-[#C7A17A] hidden xl:flex" href="mailto:eat@Zithai.co.nz">
-                        <span className="material-symbols-filled pr-1 lg:pr-2">
+                        <span className="material-symbols-filled pr-1 lg:pr-2 text-sm lg:text-base">
                             mail
                         </span>
-                        eat@Zithai.co.nz
+                        <span className="font-medium">eat@Zithai.co.nz</span>
                     </Link>
                 </div>
-                <div className="space-x-4 flex text-[1rem] items-center">
-                    <Link href="https://www.facebook.com/Zithai/" className="hidden xl:block"><FontAwesomeIcon icon={faFacebook} /></Link>
-                    <Link href="https://www.instagram.com/Zithai/" className="hidden xl:block"><FontAwesomeIcon icon={faInstagram} /></Link>
+                <div className="space-x-4 lg:space-x-6 flex text-base lg:text-lg items-center">
+                    <Link href="https://www.facebook.com/Zithai/" className="hidden xl:block hover:text-[#C7A17A] transition-colors"><FontAwesomeIcon icon={faFacebook} /></Link>
+                    <Link href="https://www.instagram.com/Zithai/" className="hidden xl:block hover:text-[#C7A17A] transition-colors"><FontAwesomeIcon icon={faInstagram} /></Link>
                 </div>
             </div>
 
@@ -56,31 +56,31 @@ const Header = (props: { title?: string }) => {
     return (
         <>
             <StickyHeader />
-            <div className="bg-[#ffe6af] text-black text-xs px-4 lg:px-16 py-3 flex justify-between">
+            <div className="bg-[#ffe6af] text-black text-xs lg:text-sm px-4 lg:px-16 py-3 lg:py-4 flex justify-between">
                 <div className="flex space-x-4 lg:space-x-8">
                     <Link className="items-center flex hover:text-[#C7A17A]" href="https://maps.app.goo.gl/aDk2A5ntDKVtAzSH9" target="_blank">
-                        <span className="material-symbols-filled pr-1 lg:pr-2">
+                        <span className="material-symbols-filled pr-1 lg:pr-2 text-sm lg:text-base">
                             location_on
                         </span>
-                        <span className="hidden lg:inline">3/18 Clarence St, Devonport, Auckland</span>
-                        <span className="lg:hidden">Devonport</span>
+                        <span className="hidden lg:inline font-medium">3/18 Clarence St, Devonport, Auckland</span>
+                        <span className="lg:hidden font-medium">Devonport</span>
                     </Link>
                     <Link className="items-center flex hover:text-[#C7A17A]" href="tel:+094454173">
-                        <span className="material-symbols-filled pr-1 lg:pr-2">
+                        <span className="material-symbols-filled pr-1 lg:pr-2 text-sm lg:text-base">
                             phone_iphone
                         </span>
-                        09 445 4173
+                        <span className="font-medium">09 445 4173</span>
                     </Link>
                     <Link className="items-center hover:text-[#C7A17A] hidden xl:flex" href="mailto:eat@Zithai.co.nz">
-                        <span className="material-symbols-filled pr-1 lg:pr-2">
+                        <span className="material-symbols-filled pr-1 lg:pr-2 text-sm lg:text-base">
                             mail
                         </span>
-                        eat@Zithai.co.nz
+                        <span className="font-medium">eat@Zithai.co.nz</span>
                     </Link>
                 </div>
-                <div className="space-x-4 flex text-[1rem] items-center">
-                    <Link href="https://www.facebook.com/Zithai/" className="hidden xl:block"><FontAwesomeIcon icon={faFacebook} /></Link>
-                    <Link href="https://www.instagram.com/Zithai/" className="hidden xl:block"><FontAwesomeIcon icon={faInstagram} /></Link>
+                <div className="space-x-4 lg:space-x-6 flex text-base lg:text-lg items-center">
+                    <Link href="https://www.facebook.com/Zithai/" className="hidden xl:block hover:text-[#C7A17A] transition-colors"><FontAwesomeIcon icon={faFacebook} /></Link>
+                    <Link href="https://www.instagram.com/Zithai/" className="hidden xl:block hover:text-[#C7A17A] transition-colors"><FontAwesomeIcon icon={faInstagram} /></Link>
                 </div>
             </div>
 
