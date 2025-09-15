@@ -94,7 +94,7 @@ export const Menu = () => {
             <div className="mx-auto max-w-screen-2xl pt-2 pb-16 md:pt-4 md:pb-20 overflow-visible">
                 <div className="grid grid-cols-1 gap-16 px-4 sm:px-6 lg:px-8 overflow-visible">
                     {/* Cake Card 1 */}
-                    <div className="rounded-3xl p-8 md:p-12 text-white relative overflow-visible" style={{ backgroundColor: '#ff7033' }}>
+                    <div className="rounded-3xl p-8 md:p-12 text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer" style={{ backgroundColor: '#ff7033' }}>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Image column */}
                             <div className="relative lg:h-96 order-2 lg:order-1">
@@ -146,7 +146,7 @@ export const Menu = () => {
                     </div>
 
                     {/* Cake Card 2 */}
-                    <div className="rounded-3xl p-8 md:p-12 text-black relative overflow-visible" style={{ backgroundColor: '#ffe6af' }}>
+                    <div className="rounded-3xl p-8 md:p-12 text-black relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer" style={{ backgroundColor: '#ffe6af' }}>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Text column */}
                             <div className="space-y-6 relative z-10 order-1">
