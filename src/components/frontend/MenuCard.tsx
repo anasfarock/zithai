@@ -196,6 +196,58 @@ export const Menu = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* Cake Card 3 */}
+                    <div className="rounded-3xl p-8 md:p-12 text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer" style={{ backgroundColor: '#ff7033' }}>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            {/* Image column */}
+                            <div className="relative lg:h-96 order-2 lg:order-1">
+                                {/* Mobile image */}
+                                <div className="lg:hidden relative h-64 w-full">
+                                    <Image
+                                        src="/images/cake-1.png"
+                                        alt="Decadent Tiramisu"
+                                        fill
+                                        className="object-contain rounded-2xl"
+                                    />
+                                </div>
+                                {/* Desktop image - centered */}
+                                <div className="hidden lg:block relative w-full h-full">
+                                    <Image
+                                        src="/images/cake-1.png"
+                                        alt="Decadent Tiramisu"
+                                        fill
+                                        className="object-contain rounded-2xl"
+                                    />
+                                </div>
+                            </div>
+                            {/* Text column */}
+                            <div className="space-y-6 relative z-10 order-1 lg:order-2">
+                                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                                    Decadent Tiramisu
+                                </h2>
+                                <p className="text-lg leading-relaxed text-white/80">
+                                    Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+
+                                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                                    <Button
+                                        variant="secondary"
+                                        size="lg"
+                                        className="bg-white/10 border-2 border-white/20 text-white hover:bg-white/20 hover:text-white rounded-full"
+                                    >
+                                        Learn More
+                                    </Button>
+                                    <Button
+                                        size="lg"
+                                        className="bg-white text-black hover:bg-white/80 rounded-full"
+                                    >
+                                        Order Now
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
