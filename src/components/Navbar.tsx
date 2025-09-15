@@ -23,6 +23,7 @@ export default function NavBar(props: { primary?: boolean, className?: string })
                             <div className="inset-y-0 left-0 w-full items-center block xl:hidden">
                                 {/* Mobile menu button*/}
                                 <div className='flex justify-between my-2'>
+                                    <p className="text-2xl font-medium tracking-wider">Zithai</p>
                                     <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-[#1A191B] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                         <span className="absolute -inset-0.5" />
                                         <span className="sr-only">Open main menu</span>
@@ -32,7 +33,6 @@ export default function NavBar(props: { primary?: boolean, className?: string })
                                             <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                                         )}
                                     </Disclosure.Button>
-                                    <p className="text-2xl font-medium tracking-wider">Zithai</p>
                                 </div>
                                 <Disclosure.Panel className="xl:hidden w-full h-full my-4">
                                     <div className="space-y-1 px-2 pb-3 pt-2 bg-white rounded-md">
