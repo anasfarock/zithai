@@ -88,10 +88,6 @@ export const Menu = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-full flex justify-center space-x-4">
-                    <Link className={buttonVariants({ size: "sm" })} href="https://Zithai.co.nz/menu/catering-menu.pdf" target="_blank">CATERING MENU</Link>
-                    <Link className={buttonVariants({ size: "sm" })} href="https://Zithai.co.nz/menu/drinks-menu.pdf" target="_blank">DRINKS MENU</Link>
-                </div>
             </div>
         </>
     )
