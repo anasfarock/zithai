@@ -72,9 +72,9 @@ const Footer = () => {
             </div>
             <div className="bg-[#171717] w-full">
                 <div className="mx-auto w-4/5 flex flex-col xl:flex-row flex-wrap justify-between items-center p-4 text-white">
-                    <div className="font-thin text-xs tracking-wider">© 2024 Zithai. ALL RIGHTS RESERVED</div>
-                    <p className="text-md font-medium tracking-widest flex justify-center py-4 xl:py-0">Zithai</p>
-                    <a className="font-thin text-xs tracking-wider hover:text-[#C7A17A] flex justify-end" rel="noopener" href="https://github.com/BlakeFernandes/Zithai-website/" target="_blank">{process.env.VERCEL_GIT_COMMIT_SHA?.substring(0, 7) ?? "development"}</a>
+                    <div className="font-thin text-xs tracking-wider">© 2025 Zithai. ALL RIGHTS RESERVED</div>
+
+                    <a className="font-thin text-xs tracking-wider hover:text-[#C7A17A] flex justify-end" rel="noopener" href="https://anasfarooq.com/" target="_blank">{process.env.VERCEL_GIT_COMMIT_SHA?.substring(0, 7) ?? "Developed by Anas Farooq"}</a>
                 </div>
             </div>
         </footer>
