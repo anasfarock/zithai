@@ -29,8 +29,8 @@ const Catering = () => {
                 ]}
                 footer={
                     <div>
-                        <p>Phone: +09 445 4173</p>
-                        <p>Email: eat@Zithai.co.nz</p>
+                        <p>Phone: ++123 456 789</p>
+                        <p>Email: contact@zithai.in</p>
                         <p>Address: 3/18 Clarence Street, Devonport, Auckland, New Zealand</p>
                     </div>
                 }

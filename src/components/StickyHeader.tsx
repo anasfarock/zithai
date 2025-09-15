@@ -37,14 +37,14 @@ export const StickyHeader = ({ className }: StickyHeaderProps) => {
                         <span className="material-symbols-filled pr-1 lg:pr-2 text-xs lg:text-sm">
                             location_on
                         </span>
-                        <span className="hidden lg:inline font-medium">3/18 Clarence St, Devonport, Auckland</span>
+                        <span className="hidden lg:inline font-medium">Zithai, Dehli, India 12345</span>
                         <span className="lg:hidden font-medium">Devonport</span>
                     </Link>
                     <Link className="items-center flex hover:text-[#C7A17A]" href="tel:+094454173">
                         <span className="material-symbols-filled pr-1 lg:pr-2 text-xs lg:text-sm">
                             phone_iphone
                         </span>
-                        <span className="font-medium">09 445 4173</span>
+                        <span className="font-medium">+123 456 789</span>
                     </Link>
                 </div>
                 <div className="text-sm lg:text-base font-montserrat tracking-wider font-black">

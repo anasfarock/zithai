@@ -14,7 +14,7 @@ const CateringAbout = () => {
             footer={
                 <div>
                     <p className="font-medium">Please contact us for more information!</p>
-                    <p>+09 445 4173 - gogoacafe@gmail.com - 3/18 Clarence Street, Devonport, Auckland</p>
+                    <p>++123 456 789 - gogoacafe@gmail.com - 3/18 Clarence Street, Devonport, Auckland</p>
                 </div>
             }
         />

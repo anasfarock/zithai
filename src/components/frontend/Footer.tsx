@@ -18,7 +18,7 @@ const Footer = () => {
                             <span className="material-symbols-filled pr-2">
                                 location_on
                             </span>
-                            <p className="font-thin">3/18 Clarence St, Devonport, Auckland</p>
+                            <p className="font-thin">Zithai, Dehli, India 12345</p>
                         </a>
                     </div>
                     <div>
@@ -27,7 +27,7 @@ const Footer = () => {
                             <span className="material-symbols-filled pr-2">
                                 phone_iphone
                             </span>
-                            <p className="font-thin">09 445 4173</p>
+                            <p className="font-thin">+123 456 789</p>
                         </a>
                     </div>
                     <div>
@@ -36,7 +36,7 @@ const Footer = () => {
                             <span className="material-symbols-filled pr-2">
                                 mail
                             </span>
-                            <p className="font-thin">eat@Zithai.co.nz</p>
+                            <p className="font-thin">contact@zithai.in</p>
                         </a>
                     </div>
                 </div>
