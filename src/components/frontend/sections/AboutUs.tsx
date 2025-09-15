@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { buttonVariants } from "../ui/button";
+import { TextSection } from "../ui/section";
 
 const AboutUs = () => {
     return (
@@ -12,9 +13,10 @@ const AboutUs = () => {
                             {/* Header */}
                             <div className="text-center mb-8">
                                 <div className="w-16 mx-auto border-t-2 border-[#C7A17A] pb-2"></div>
-                                <h2 className="h3 aos-init aos-animate mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">
+                                <h2 className="text-4xl font-bold aos-init aos-animate mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">
                                     About Us
                                 </h2>
+                                <p className="font-medium text-lg text-[#C7A17A]">Passionate about flavors, dedicated to community</p>
                             </div>
 
                             {/* Two column layout */}
