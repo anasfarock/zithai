@@ -111,9 +111,7 @@ export const Menu = () => {
                                 <p className="text-lg leading-relaxed text-black/80">
                                     Rich chocolate cake with layers of smooth ganache and fresh berries. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                 </p>
-                                <p className="text-base leading-relaxed text-black/70">
-                                    Made with premium cocoa and finest ingredients for an unforgettable taste. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.
-                                </p>
+
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                                     <Button
                                         variant="secondary"
@@ -143,9 +141,7 @@ export const Menu = () => {
                                 <p className="text-lg leading-relaxed text-black/80">
                                     Light vanilla sponge topped with fresh seasonal berries and cream. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 </p>
-                                <p className="text-base leading-relaxed text-black/70">
-                                    A perfect balance of sweetness and freshness in every bite. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-                                </p>
+
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                                     <Button
                                         variant="secondary"
