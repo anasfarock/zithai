@@ -15,22 +15,23 @@ export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) 
     return (
         <>
             <StickyHeader />
-            <div className="bg-[#171717] text-white text-xs px-16 py-3 flex justify-between">
-                <div className="flex space-x-8">
+            <div className="bg-[#171717] text-white text-xs px-4 lg:px-16 py-3 flex justify-between">
+                <div className="flex space-x-4 lg:space-x-8">
                     <Link className="items-center flex hover:text-[#C7A17A]" href="https://maps.app.goo.gl/aDk2A5ntDKVtAzSH9" target="_blank">
-                        <span className="material-symbols-filled pr-2">
+                        <span className="material-symbols-filled pr-1 lg:pr-2">
                             location_on
                         </span>
-                        3/18 Clarence St, Devonport, Auckland
+                        <span className="hidden lg:inline">3/18 Clarence St, Devonport, Auckland</span>
+                        <span className="lg:hidden">Devonport</span>
                     </Link>
                     <Link className="items-center flex hover:text-[#C7A17A]" href="tel:+094454173">
-                        <span className="material-symbols-filled pr-2">
+                        <span className="material-symbols-filled pr-1 lg:pr-2">
                             phone_iphone
                         </span>
                         09 445 4173
                     </Link>
                     <Link className="items-center hover:text-[#C7A17A] hidden xl:flex" href="mailto:eat@Zithai.co.nz">
-                        <span className="material-symbols-filled pr-2">
+                        <span className="material-symbols-filled pr-1 lg:pr-2">
                             mail
                         </span>
                         eat@Zithai.co.nz
@@ -55,22 +56,23 @@ const Header = (props: { title?: string }) => {
     return (
         <>
             <StickyHeader />
-            <div className="bg-[#1A191B] text-white text-xs px-16 py-3 flex justify-between">
-                <div className="flex space-x-8">
+            <div className="bg-[#1A191B] text-white text-xs px-4 lg:px-16 py-3 flex justify-between">
+                <div className="flex space-x-4 lg:space-x-8">
                     <Link className="items-center flex hover:text-[#C7A17A]" href="https://maps.app.goo.gl/aDk2A5ntDKVtAzSH9" target="_blank">
-                        <span className="material-symbols-filled pr-2">
+                        <span className="material-symbols-filled pr-1 lg:pr-2">
                             location_on
                         </span>
-                        3/18 Clarence St, Devonport, Auckland
+                        <span className="hidden lg:inline">3/18 Clarence St, Devonport, Auckland</span>
+                        <span className="lg:hidden">Devonport</span>
                     </Link>
                     <Link className="items-center flex hover:text-[#C7A17A]" href="tel:+094454173">
-                        <span className="material-symbols-filled pr-2">
+                        <span className="material-symbols-filled pr-1 lg:pr-2">
                             phone_iphone
                         </span>
                         09 445 4173
                     </Link>
                     <Link className="items-center hover:text-[#C7A17A] hidden xl:flex" href="mailto:eat@Zithai.co.nz">
-                        <span className="material-symbols-filled pr-2">
+                        <span className="material-symbols-filled pr-1 lg:pr-2">
                             mail
                         </span>
                         eat@Zithai.co.nz

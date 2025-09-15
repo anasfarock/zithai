@@ -18,7 +18,7 @@ export default function NavBar(props: { primary?: boolean, className?: string })
         <Disclosure as="nav" className={cn("w-full text-white", props?.primary ? "absolute z-20 top-0" : "", props.className)}>
             {({ open }) => (
                 <>
-                    <div className="px-16 py-6">
+                    <div className="px-4 lg:px-16 py-3">
                         <div className="relative flex items-center justify-between">
                             <div className="inset-y-0 left-0 w-full items-center block xl:hidden">
                                 {/* Mobile menu button*/}
