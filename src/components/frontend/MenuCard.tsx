@@ -91,20 +91,36 @@ export const Menu = () => {
             </div> */}
 
             {/* Cake Cards Section */}
-            <div className="mx-auto max-w-screen-2xl pt-2 pb-8 md:pt-4 md:pb-12">
-                <div className="grid grid-cols-1 gap-8 px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-screen-2xl pt-2 pb-8 md:pt-4 md:pb-12 overflow-visible">
+                <div className="grid grid-cols-1 gap-8 px-4 sm:px-6 lg:px-8 overflow-visible">
                     {/* Cake Card 1 */}
-                    <div className="bg-[#B8936C] rounded-3xl p-8 md:p-12 text-white">
+                    <div className="bg-[#B8936C] rounded-3xl p-8 md:p-12 text-white relative overflow-visible">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                            <div className="relative h-96 rounded-2xl overflow-hidden">
-                                <Image
-                                    src="/images/cake-1.png"
-                                    alt="Artisan Chocolate Cake"
-                                    fill
-                                    className="object-cover"
-                                />
+                            {/* Image column - positioned first for left overflow */}
+                            <div className="relative lg:h-96 order-2 lg:order-1">
+                                {/* Mobile image - normal positioning */}
+                                <div className="lg:hidden relative h-64 w-full">
+                                    <Image
+                                        src="/images/cake-1.png"
+                                        alt="Artisan Chocolate Cake"
+                                        fill
+                                        className="object-cover rounded-2xl"
+                                    />
+                                </div>
+                                {/* Desktop image - centered overflow positioning */}
+                                <div className="hidden lg:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[32rem] h-96 z-20">
+                                    <div className="relative w-full h-full transform -translate-x-16">
+                                        <Image
+                                            src="/images/cake-1.png"
+                                            alt="Artisan Chocolate Cake"
+                                            fill
+                                            className="object-cover rounded-2xl"
+                                        />
+                                    </div>
+                                </div>
                             </div>
-                            <div className="space-y-6">
+                            {/* Text column */}
+                            <div className="space-y-6 order-1 lg:order-2">
                                 <h2 className="text-4xl md:text-5xl font-bold text-black">
                                     Chocolate Delight
                                 </h2>
@@ -132,9 +148,10 @@ export const Menu = () => {
                     </div>
 
                     {/* Cake Card 2 */}
-                    <div className="bg-[#B8936C] rounded-3xl p-8 md:p-12 text-white">
+                    <div className="bg-[#B8936C] rounded-3xl p-8 md:p-12 text-white relative overflow-visible">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                            <div className="space-y-6">
+                            {/* Text column */}
+                            <div className="space-y-6 relative z-10 order-1">
                                 <h2 className="text-4xl md:text-5xl font-bold text-black">
                                     Berry Bliss
                                 </h2>
@@ -158,13 +175,28 @@ export const Menu = () => {
                                     </Button>
                                 </div>
                             </div>
-                            <div className="relative h-96 rounded-2xl overflow-hidden">
-                                <Image
-                                    src="/images/cake-2.png"
-                                    alt="Vanilla Berry Cake"
-                                    fill
-                                    className="object-cover"
-                                />
+                            {/* Image column - positioned second for right overflow */}
+                            <div className="relative lg:h-96 order-2 overflow-visible">
+                                {/* Mobile image - normal positioning */}
+                                <div className="lg:hidden relative h-64 w-full">
+                                    <Image
+                                        src="/images/cake-2.png"
+                                        alt="Vanilla Berry Cake"
+                                        fill
+                                        className="object-cover rounded-2xl"
+                                    />
+                                </div>
+                                {/* Desktop image - overflow positioning extending beyond container */}
+                                <div className="hidden lg:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+                                    <div className="relative w-[35rem] h-[35rem] transform translate-x-32">
+                                        <Image
+                                            src="/images/cake-2.png"
+                                            alt="Vanilla Berry Cake"
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
