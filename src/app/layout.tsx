@@ -2,22 +2,17 @@ import "~/styles/globals.scss";
 import '~/lib/fontawesome'; // Import FontAwesome configuration
 
 import React from 'react';
-import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from "next/script";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
-const inter = localFont({
-    src: [
-        {
-            path: "../fonts/Inter-Bold.ttf",
-            weight: "700",
-            style: "normal",
-        },
-    ],
-    variable: "--font-sans",
-    fallback: ["system-ui", "arial"],
+const poppins = Poppins({
+    subsets: ['latin'],
+    weight: ['300', '400', '500', '600', '700', '800'],
+    variable: "--font-poppins",
+    display: 'swap',
 });
 
 export const metadata = {
@@ -32,10 +27,10 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className="font-sans ${inter.variable} bg-[#F7F7F7]">
+        <html lang="en" className={`${poppins.variable} bg-[#F7F7F7]`}>
             <head>
             </head>
-            <body>
+            <body className={poppins.className}>
                 {children}
                 <Analytics />
                 <SpeedInsights />
