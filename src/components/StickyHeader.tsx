@@ -47,7 +47,7 @@ export const StickyHeader = ({ className }: StickyHeaderProps) => {
                         09 445 4173
                     </Link>
                 </div>
-                <div className="text-sm font-medium tracking-wider">
+                <div className="text-sm font-playlist tracking-wider">
                     Zithai
                 </div>
             </div>
@@ -57,7 +57,7 @@ export const StickyHeader = ({ className }: StickyHeaderProps) => {
                 {({ open }) => (
                     <>
                         <div className="flex justify-between items-center">
-                            <Link href="/" className="text-xl font-medium tracking-wider">
+                            <Link href="/" className="text-xl font-playlist tracking-wider">
                                 Zithai
                             </Link>
 

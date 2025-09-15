@@ -23,7 +23,7 @@ export default function NavBar(props: { primary?: boolean, className?: string })
                             <div className="inset-y-0 left-0 w-full items-center block xl:hidden">
                                 {/* Mobile menu button*/}
                                 <div className='flex justify-between my-2'>
-                                    <p className="text-2xl font-medium tracking-wider">Zithai</p>
+                                    <p className="text-2xl font-playlist tracking-wider">Zithai</p>
                                     <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-[#1A191B] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                         <span className="absolute -inset-0.5" />
                                         <span className="sr-only">Open main menu</span>
@@ -54,7 +54,7 @@ export default function NavBar(props: { primary?: boolean, className?: string })
                                 </Disclosure.Panel>
                             </div>
                             <div className="hidden space-x-4 justify-between w-full xl:flex items-center">
-                                <p className="text-2xl font-medium tracking-wider">{props?.primary ? "Zithai" : "Zithai"}</p>
+                                <p className="text-2xl font-playlist tracking-wider">{props?.primary ? "Zithai" : "Zithai"}</p>
                                 <div className="space-x-8 hidden xl:flex">
                                     <Link href="/" className="text-sm font-normal tracking-wide leading-6 text-white">HOME</Link>
                                     <Link href="/about" className="text-sm font-normal tracking-wide leading-6 text-white">ABOUT</Link>
