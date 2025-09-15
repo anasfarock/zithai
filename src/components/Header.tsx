@@ -56,7 +56,7 @@ const Header = (props: { title?: string }) => {
     return (
         <>
             <StickyHeader />
-            <div className="bg-[#1A191B] text-white text-xs px-4 lg:px-16 py-3 flex justify-between">
+            <div className="bg-[#ffe6af] text-black text-xs px-4 lg:px-16 py-3 flex justify-between">
                 <div className="flex space-x-4 lg:space-x-8">
                     <Link className="items-center flex hover:text-[#C7A17A]" href="https://maps.app.goo.gl/aDk2A5ntDKVtAzSH9" target="_blank">
                         <span className="material-symbols-filled pr-1 lg:pr-2">
