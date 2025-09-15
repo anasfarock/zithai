@@ -54,11 +54,9 @@ export default function NavBar(props: { primary?: boolean, className?: string })
                                 </Disclosure.Panel>
                             </div>
                             <div className="hidden space-x-4 justify-between w-full xl:flex items-center">
+                                <p className="text-2xl font-medium tracking-wider">{props?.primary ? "Zithai" : "Zithai"}</p>
                                 <div className="space-x-8 hidden xl:flex">
                                     <Link href="/" className="text-sm font-normal tracking-wide leading-6 text-white">HOME</Link>
-                                </div>
-                                <p className="flex-1 text-center text-2xl font-medium tracking-wider">{props?.primary ?? "Zithai"}</p>
-                                <div className="space-x-8 hidden xl:flex">
                                     <Link href="/about" className="text-sm font-normal tracking-wide leading-6 text-white">ABOUT</Link>
                                     <Link href="/menu" className="text-sm font-normal tracking-wide leading-6 text-white">MENUS</Link>
                                     <Link href="/contact" className="text-sm font-normal tracking-wide leading-6 text-white">CONTACT</Link>

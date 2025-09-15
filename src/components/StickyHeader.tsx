@@ -46,15 +46,12 @@ export const StickyHeader = ({ className }: StickyHeaderProps) => {
             {/* Navigation bar */}
             <nav className="bg-white/95 backdrop-blur-sm text-black px-4 lg:px-16 py-3 border-t border-gray-200">
                 <div className="flex justify-between items-center">
-                    <div className="hidden lg:flex space-x-6">
-                        <Link href="/" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">HOME</Link>
-                    </div>
-
-                    <Link href="/" className="text-xl font-medium tracking-wider flex-1 lg:flex-none text-center">
+                    <Link href="/" className="text-xl font-medium tracking-wider">
                         Zithai
                     </Link>
 
                     <div className="hidden lg:flex space-x-6">
+                        <Link href="/" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">HOME</Link>
                         <Link href="/about" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">ABOUT</Link>
                         <Link href="/menu" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">MENUS</Link>
                         <Link href="/contact" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">CONTACT</Link>
