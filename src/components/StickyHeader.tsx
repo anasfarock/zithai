@@ -53,7 +53,7 @@ export const StickyHeader = ({ className }: StickyHeaderProps) => {
             </div>
 
             {/* Navigation bar */}
-            <Disclosure as="nav" className="bg-white/95 backdrop-blur-sm text-black px-4 lg:px-16 py-3 lg:py-4 border-t border-gray-200">
+            <Disclosure as="nav" className="bg-white/90 backdrop-blur-sm text-black px-4 lg:px-16 py-3 lg:py-4 border-t border-gray-200">
                 {({ open }) => (
                     <>
                         <div className="flex justify-between items-center">
