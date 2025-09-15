@@ -10,9 +10,6 @@ const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'About', href: '/about', current: false },
     { name: 'Menu', href: '/menu', current: false },
-    { name: 'Catering', href: '/catering', current: false },
-    { name: 'Events', href: '/events', current: false },
-    { name: 'Store', href: '/store', current: false },
     { name: 'Contact', href: '/contact', current: false },
 ]
 
@@ -59,9 +56,6 @@ export default function NavBar(props: { primary?: boolean, className?: string })
                             <div className="hidden space-x-4 justify-between w-full xl:flex items-center">
                                 <div className="space-x-8 hidden xl:flex">
                                     <Link href="/" className="text-sm font-normal tracking-wide leading-6 text-white">HOME</Link>
-                                    <Link href="/catering" className="text-sm font-normal tracking-wide leading-6 text-white">CATERING</Link>
-                                    <Link href="/events" className="text-sm font-normal tracking-wide leading-6 text-white">EVENTS</Link>
-                                    <Link href="/store" className="text-sm font-normal tracking-wide leading-6 text-white">STORE</Link>
                                 </div>
                                 <p className="flex-1 text-center text-2xl font-medium tracking-wider">{props?.primary ?? "Zithai"}</p>
                                 <div className="space-x-8 hidden xl:flex">

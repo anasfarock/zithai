@@ -9,7 +9,6 @@ import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import Link from "next/link";
 import { Button, buttonVariants } from "./frontend/ui/button";
 import NavBar from "./Navbar";
-import NavCart from "./NavCart";
 import { StickyHeader } from "./StickyHeader";
 
 export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) => {
@@ -38,7 +37,6 @@ export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) 
                     </Link>
                 </div>
                 <div className="space-x-4 flex text-[1rem] items-center">
-                    {/* <NavCart /> */}
                     <Link href="https://www.facebook.com/Zithai/" className="hidden xl:block"><FontAwesomeIcon icon={faFacebook} /></Link>
                     <Link href="https://www.instagram.com/Zithai/" className="hidden xl:block"><FontAwesomeIcon icon={faInstagram} /></Link>
                 </div>
@@ -79,7 +77,6 @@ const Header = (props: { title?: string, heroImg: StaticImageData }) => {
                     </Link>
                 </div>
                 <div className="space-x-4 flex text-[1rem] items-center">
-                    {/* <NavCart /> */}
                     <Link href="https://www.facebook.com/Zithai/" className="hidden xl:block"><FontAwesomeIcon icon={faFacebook} /></Link>
                     <Link href="https://www.instagram.com/Zithai/" className="hidden xl:block"><FontAwesomeIcon icon={faInstagram} /></Link>
                 </div>
@@ -107,7 +104,6 @@ const Header = (props: { title?: string, heroImg: StaticImageData }) => {
                         <h1 className="text-[80px] w-full font-playlist pb-6">{props.title ? props.title : "Zithai"}</h1>
                         <div className="space-x-6">
                             <Link className={buttonVariants({ variant: "outline", size: "lg" })} href="/menu">SEE MENU</Link>
-                            {/* <Link className={buttonVariants({ variant: "outline", size: "lg" })} href="/reservations">BOOK YOUR TABLE</Link> */}
                         </div>
                     </div>
                 </nav>
@@ -128,12 +124,5 @@ const Header = (props: { title?: string, heroImg: StaticImageData }) => {
         </>
     );
 }
-
-
-{/* <div className="absolute left-0 top-0 z-20 p-4">
-                    <Suspense fallback={<OpenCart />}>
-                        <Cart />
-                    </Suspense>
-                </div> */}
 
 export default Header;

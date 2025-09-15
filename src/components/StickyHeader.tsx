@@ -48,9 +48,6 @@ export const StickyHeader = ({ className }: StickyHeaderProps) => {
                 <div className="flex justify-between items-center">
                     <div className="hidden lg:flex space-x-6">
                         <Link href="/" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">HOME</Link>
-                        <Link href="/catering" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">CATERING</Link>
-                        <Link href="/events" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">EVENTS</Link>
-                        <Link href="/store" className="text-sm font-normal tracking-wide hover:text-[#C7A17A] transition-colors">STORE</Link>
                     </div>
 
                     <Link href="/" className="text-xl font-medium tracking-wider flex-1 lg:flex-none text-center">
