@@ -40,7 +40,7 @@ export const Menu = () => {
         <>
             <TextSection
                 title="Our Menu"
-                subtitle="Best Goan & Continental Cuisine in Devonport"
+                subtitle="Best Goan & Continental Cuisine in "
                 description={[
                     "Our menu elegantly showcases authentic Goan dishes, each meticulously refined through generations, embodying the rich culinary heritage of Goa. Complementing these are select European dishes, adding a sophisticated touch of rustic charm to our diverse culinary array."
                 ]}

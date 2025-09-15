@@ -24,7 +24,7 @@ const montserrat = Montserrat({
 
 export const metadata = {
     title: "Zithai Sweets",
-    description: "Nestled in the heart of Devonport, Zithai is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine.",
+    description: "Nestled in the heart of , Zithai is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine.",
     icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

@@ -10,7 +10,7 @@ const Catering = () => {
             <ImageTextSection
                 title="CATERING"
                 description={[
-                    "Promote your events with Zithai & catering services, designed to accommodate any occasion in Devonport or Auckland.",
+                    "Promote your events with Zithai & catering services, designed to accommodate any occasion in  or Auckland.",
                     "Whether you're organizing a quick business lunch, an elegant dinner party, or anything in between, we offer a versatile menu tailored to your specific needs. With many satisfied customers, and an experienced team that excels in event planning and providing delicious food paired with impeccable service we ensure that the food at your event not just a meal, but a memorable part of the experience."
                 ]}
                 images={[Catering1]}

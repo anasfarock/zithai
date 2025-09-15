@@ -69,19 +69,19 @@ const AboutUs = () => {
                                 {/* Text Content - Left side */}
                                 <div className="order-1 lg:order-1 space-y-4">
                                     <p className="text-gray-700 leading-relaxed">
-                                        Nestled in the heart of Devonport, Zithai is more than just a café; it&apos;s a journey of flavors and a celebration of community. As a husband-and-wife team, we infuse our shared love for culinary adventures and heartfelt hospitality into every aspect of our family eatery.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
                                     </p>
                                     <p className="text-gray-700 leading-relaxed">
-                                        Our journey began with a simple dream: to blend the vibrant tastes of Goa with the rustic charm of European cuisine, right here in New Zealand. Each dish we serve is a reflection of our passion for culinary diversity, crafted with the freshest local produce to ensure a dining experience that is both wholesome and flavorful.
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
                                     </p>
                                     <p className="text-gray-700 leading-relaxed">
-                                        Dive into our diverse menu, featuring a fusion of traditional Goan curries, European-inspired salads, and homemade pastries. Every bite tells a story, whether it&apos;s the spice-infused aromas of Goa or the delicate finesse of European cuisine. Our commitment to healthy, satisfying meals means there&apos;s something delightful for every palate.
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
                                     </p>
                                     <p>
                                         At Zithai, we’re not just serving meals; Our dedication to personalized service ensures that every visit is unique. We strive to craft a space where comfort meets elegance, where every guest can unwind and savor not just great food, but also the joy of togetherness.
                                     </p>
                                     <p className="text-gray-700 leading-relaxed">
-                                        We warmly invite you to step into our world, where every meal is a celebration, and every guest is part of our family. Whether you&apos;re seeking a quick, savory bite, a leisurely brunch, or an intimate dinner, Zithai is your destination. We&apos;re excited to welcome you and share the flavors and stories that make our café a home away from home.
+                                        Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Quisquam dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                     </p>
                                     <div className="pt-4">
                                         <p className="font-semibold pb-4 text-gray-800">Follow us on Instagram and Facebook to stay up to date with news and events.</p>

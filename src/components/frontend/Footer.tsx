@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="mx-auto max-w-screen-2xl w-full grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 p-12 text-white">
                 <div className="space-y-4 text-center font-thin">
                     <p className="text-lg font-bold pb-4">WELCOME TO Zithai</p>
-                    <p>Zithai opened its doors in 2019, introducing a unique blend of authentic Goan and European cuisine to the heart of Devonport.</p>
+                    <p>Zithai opened its doors in 2019, introducing a unique blend of authentic Goan and European cuisine to the heart of .</p>
                     <p>Nestled in a charming off-street location, the café is known for its cozy atmosphere and husband-and-wife team.</p>
                 </div>
                 <div className="space-y-4 text-center items-center">

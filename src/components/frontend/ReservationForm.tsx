@@ -163,7 +163,7 @@ export const ReservationForm = ({
                                         <span className="!text-[20px] !font-semibold material-symbols-outlined">
                                             location_on
                                         </span>
-                                        <span>3/18 Clarence Street, Devonport, Auckland 0624</span> {/* Assuming this is static */}
+                                        <span>3/18 Clarence Street, , Auckland 0624</span> {/* Assuming this is static */}
                                     </div>
                                 </div>
                             </div>

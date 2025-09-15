@@ -14,7 +14,7 @@ import { TextSection } from "~/components/frontend/ui/section";
 
 export const metadata = {
     title: "Zithai | Contact Us",
-    description: "Nestled in the heart of Devonport, Zithai is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine.",
+    description: "Nestled in the heart of , Zithai is a cherished destinations for locals and visitors. Offering a unique fusion of Goan and European cuisine.",
     icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
@@ -31,7 +31,7 @@ const Catering = () => {
                     <div>
                         <p>Phone: ++123 456 789</p>
                         <p>Email: contact@zithai.in</p>
-                        <p>Address: 3/18 Clarence Street, Devonport, Auckland, New Zealand</p>
+                        <p>Address: 3/18 Clarence Street, , Auckland, New Zealand</p>
                     </div>
                 }
             />

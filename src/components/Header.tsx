@@ -22,7 +22,7 @@ export const MiniHeader = (props: { title?: string, heroImg: StaticImageData }) 
                             location_on
                         </span>
                         <span className="hidden lg:inline font-medium">Zithai, Dehli, India 12345</span>
-                        <span className="lg:hidden font-medium">Devonport</span>
+                        <span className="lg:hidden font-medium"></span>
                     </Link>
                     <Link className="items-center flex hover:text-[#C7A17A]" href="tel:+094454173">
                         <span className="material-symbols-filled pr-1 lg:pr-2 text-sm lg:text-base">
@@ -63,7 +63,7 @@ const Header = (props: { title?: string }) => {
                             location_on
                         </span>
                         <span className="hidden lg:inline font-medium">Zithai, Dehli, India 12345</span>
-                        <span className="lg:hidden font-medium">Devonport</span>
+                        <span className="lg:hidden font-medium"></span>
                     </Link>
                     <Link className="items-center flex hover:text-[#C7A17A]" href="tel:+094454173">
                         <span className="material-symbols-filled pr-1 lg:pr-2 text-sm lg:text-base">
