@@ -1,5 +1,3 @@
-import AboutUsImg from "@/images/about-us.png";
-import Image from "next/image";
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 
@@ -10,13 +8,12 @@ const AboutUs = () => {
                 <div className="mx-auto px-4 sm:px-6">
                     <div className="py-8 md:py-12">
                         <div className="max-w-6xl mx-auto text-center" data-aos-id-tabs="">
-                            <div className="flex flex-col md:flex-row items-center space-x-4">
-                                <Image src={AboutUsImg} className="object-contain w-full max-w-[250px]" alt="Jose & Doreen" />
-                                <div className="space-y-8 shrink">
+                            <div className="space-y-8">
+                                <div>
                                     <div>
                                         <div className="w-16 mx-auto border-t-2 border-[#C7A17A] pb-2"></div>
                                         <h2 className="h3 aos-init aos-animate mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">
-                                            JOSE & DOREEN
+                                            About Us
                                         </h2>
                                     </div>
                                     <p>
