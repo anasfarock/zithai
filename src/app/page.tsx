@@ -7,7 +7,6 @@ import Catering from "~/components/frontend/sections/Catering";
 
 import Hero from "@/images/hero-1.jpg";
 import { Menu } from "~/components/frontend/MenuCard";
-import FeaturedIn from "~/components/frontend/sections/FeaturedIn";
 
 const Index = () => {
     return (
@@ -18,7 +17,6 @@ const Index = () => {
             <Menu />
             <Cakes />
             <Catering />
-            <FeaturedIn />
             <CafeMap />
             <Footer />
         </>
