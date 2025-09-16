@@ -92,11 +92,27 @@ const CakeCard = ({ children, bgColor, index, keepTextBlack = false }: { childre
 
     // Determine text color based on background and keepTextBlack prop
     const getTextColor = () => {
-        if (keepTextBlack) return 'text-black';
         if (isMobile) {
+            if (keepTextBlack) return 'text-black';
             return shouldShowHoverState ? 'text-white' : 'text-black';
+        } else {
+            // Desktop hover colors
+            if (keepTextBlack) {
+                return 'text-black'; // For yellow background card, text stays black
+            } else {
+                return 'text-black hover:text-white'; // For orange background cards, text becomes white on hover
+            }
         }
-        return 'text-black hover:text-white';
+    };
+
+    // Get the appropriate hover classes for desktop
+    const getDesktopHoverClasses = () => {
+        if (bgColor === 'bg-[#ff7033]') {
+            return 'hover:bg-[#ff7033]';
+        } else if (bgColor === 'bg-[#ffe6af]') {
+            return 'hover:bg-[#ffe6af]';
+        }
+        return '';
     };
 
     return (
@@ -111,7 +127,7 @@ const CakeCard = ({ children, bgColor, index, keepTextBlack = false }: { childre
                             ? `${bgColor} ${getTextColor()} scale-105 shadow-2xl`
                             : `bg-white ${getTextColor()}`
                         )
-                        : `bg-white hover:${bgColor} ${getTextColor()}`
+                        : `bg-white ${getDesktopHoverClasses()} ${getTextColor()}`
                     }`}
             >
                 {children}
