@@ -9,6 +9,40 @@ import { faLeaf, faWheatAlt } from '@fortawesome/free-solid-svg-icons'
 import { Button, buttonVariants } from "./ui/button";
 import Link from "next/link";
 
+// Context for sharing card state with buttons
+const CakeCardContext = React.createContext<{
+    isMobile: boolean;
+    shouldShowHoverState: boolean;
+    keepTextBlack: boolean;
+}>({
+    isMobile: false,
+    shouldShowHoverState: false,
+    keepTextBlack: false,
+});
+
+const CakeOrderButton = () => {
+    const { isMobile, shouldShowHoverState, keepTextBlack } = React.useContext(CakeCardContext);
+
+    const getMobileButtonStyles = () => {
+        if (!isMobile || !shouldShowHoverState) return '';
+
+        if (keepTextBlack) {
+            return 'px-3 py-3 rounded-full bg-black text-white';
+        } else {
+            return 'px-3 py-3 rounded-full bg-white text-black';
+        }
+    };
+
+    return (
+        <button className={`font-medium text-lg transition-all duration-300 ease-in-out px-0 py-3 lg:group-hover:px-6 lg:group-hover:py-3 lg:group-hover:rounded-full ${keepTextBlack
+            ? 'lg:group-hover:bg-black lg:group-hover:text-white'
+            : 'lg:group-hover:bg-white lg:group-hover:text-black'
+            } ${getMobileButtonStyles()}`}>
+            Order Now
+        </button>
+    );
+};
+
 const CakeCard = ({ children, bgColor, index, keepTextBlack = false }: { children: React.ReactNode, bgColor: string, index: number, keepTextBlack?: boolean }) => {
     const [isInView, setIsInView] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
@@ -66,19 +100,23 @@ const CakeCard = ({ children, bgColor, index, keepTextBlack = false }: { childre
     };
 
     return (
-        <div
-            ref={cardRef}
-            className={`group rounded-[2rem] p-8 md:p-12 relative overflow-visible transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer
-                ${isMobile
-                    ? (shouldShowHoverState
-                        ? `${bgColor} ${getTextColor()} scale-105 shadow-2xl`
-                        : `bg-white ${getTextColor()}`
-                    )
-                    : `bg-white hover:${bgColor} ${getTextColor()}`
-                }`}
-        >
-            {children}
-        </div>
+        <CakeCardContext.Provider value={{ isMobile, shouldShowHoverState, keepTextBlack }}>
+            <div
+                ref={cardRef}
+                data-mobile-active={isMobile && shouldShowHoverState}
+                data-keep-text-black={keepTextBlack}
+                className={`group rounded-[2rem] p-8 md:p-12 relative overflow-visible transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer
+                    ${isMobile
+                        ? (shouldShowHoverState
+                            ? `${bgColor} ${getTextColor()} scale-105 shadow-2xl`
+                            : `bg-white ${getTextColor()}`
+                        )
+                        : `bg-white hover:${bgColor} ${getTextColor()}`
+                    }`}
+            >
+                {children}
+            </div>
+        </CakeCardContext.Provider>
     );
 };
 
@@ -202,9 +240,7 @@ export const Menu = () => {
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4 pb-8 lg:pb-0">
-                                    <button className="font-medium text-lg transition-all duration-300 ease-in-out lg:group-hover:bg-white lg:group-hover:text-black px-0 py-0 lg:group-hover:px-6 lg:group-hover:py-3 lg:group-hover:rounded-full">
-                                        Order Now
-                                    </button>
+                                    <CakeOrderButton />
                                 </div>
                             </div>
                         </div>
@@ -223,9 +259,7 @@ export const Menu = () => {
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4 pb-8 lg:pb-0">
-                                    <button className="font-medium text-lg transition-all duration-300 ease-in-out lg:group-hover:bg-black lg:group-hover:text-white px-0 py-0 lg:group-hover:px-6 lg:group-hover:py-3 lg:group-hover:rounded-full">
-                                        Order Now
-                                    </button>
+                                    <CakeOrderButton />
                                 </div>
                             </div>
                             {/* Image column */}
@@ -286,9 +320,7 @@ export const Menu = () => {
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4 pb-8 lg:pb-0">
-                                    <button className="font-medium text-lg transition-all duration-300 ease-in-out lg:group-hover:bg-white lg:group-hover:text-black px-0 py-0 lg:group-hover:px-6 lg:group-hover:py-3 lg:group-hover:rounded-full">
-                                        Order Now
-                                    </button>
+                                    <CakeOrderButton />
                                 </div>
                             </div>
                         </div>
