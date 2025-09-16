@@ -94,7 +94,7 @@ export const Menu = () => {
             <div className="mx-auto max-w-screen-2xl pt-2 pb-16 md:pt-4 md:pb-20 overflow-visible">
                 <div className="grid grid-cols-1 gap-16 px-4 sm:px-6 lg:px-8 overflow-visible">
                     {/* Cake Card 1 */}
-                    <div className="rounded-3xl p-8 md:p-12 text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer" style={{ backgroundColor: '#ff7033' }}>
+                    <div className="rounded-3xl p-8 md:p-12 bg-white hover:bg-[#ff7033] text-black hover:text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Image column */}
                             <div className="relative lg:h-96 order-2 lg:order-1">
@@ -119,17 +119,17 @@ export const Menu = () => {
                             </div>
                             {/* Text column */}
                             <div className="space-y-6 order-1 lg:order-2">
-                                <h2 className="text-4xl md:text-5xl font-bold text-black">
+                                <h2 className="text-4xl md:text-5xl font-bold transition-colors duration-300">
                                     Chocolate Delight
                                 </h2>
-                                <p className="text-lg leading-relaxed text-black/80">
+                                <p className="text-lg leading-relaxed text-black/80 group-hover:text-white/80 transition-colors duration-300">
                                     Rich chocolate cake with layers of smooth ganache and fresh berries. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                                     <Button
                                         size="lg"
-                                        className="bg-black text-white hover:bg-black/80 rounded-full"
+                                        className="bg-black text-white hover:bg-white hover:text-black rounded-full transition-colors duration-300"
                                     >
                                         Order Now
                                     </Button>
@@ -139,21 +139,21 @@ export const Menu = () => {
                     </div>
 
                     {/* Cake Card 2 */}
-                    <div className="rounded-3xl p-8 md:p-12 text-black relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer" style={{ backgroundColor: '#ffe6af' }}>
+                    <div className="rounded-3xl p-8 md:p-12 bg-white hover:bg-[#ffe6af] text-black relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Text column */}
                             <div className="space-y-6 relative z-10 order-1">
-                                <h2 className="text-4xl md:text-5xl font-bold text-black">
+                                <h2 className="text-4xl md:text-5xl font-bold transition-colors duration-300">
                                     Berry Bliss
                                 </h2>
-                                <p className="text-lg leading-relaxed text-black/80">
+                                <p className="text-lg leading-relaxed text-black/80 transition-colors duration-300">
                                     Light vanilla sponge topped with fresh seasonal berries and cream. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                                     <Button
                                         size="lg"
-                                        className="bg-black text-white hover:bg-black/80 rounded-full"
+                                        className="bg-black text-white hover:bg-black/80 rounded-full transition-colors duration-300"
                                     >
                                         Order Now
                                     </Button>
@@ -184,7 +184,7 @@ export const Menu = () => {
                     </div>
 
                     {/* Cake Card 3 */}
-                    <div className="rounded-3xl p-8 md:p-12 text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer" style={{ backgroundColor: '#ff7033' }}>
+                    <div className="rounded-3xl p-8 md:p-12 bg-white hover:bg-[#ff7033] text-black hover:text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Image column */}
                             <div className="relative lg:h-96 order-2 lg:order-1">
@@ -209,17 +209,17 @@ export const Menu = () => {
                             </div>
                             {/* Text column */}
                             <div className="space-y-6 relative z-10 order-1 lg:order-2">
-                                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                                <h2 className="text-4xl md:text-5xl font-bold transition-colors duration-300">
                                     Decadent Tiramisu
                                 </h2>
-                                <p className="text-lg leading-relaxed text-white/80">
+                                <p className="text-lg leading-relaxed text-black/80">
                                     Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                                     <Button
                                         size="lg"
-                                        className="bg-white text-black hover:bg-white/80 rounded-full"
+                                        className="bg-black text-white hover:bg-white hover:text-black rounded-full transition-colors duration-300"
                                     >
                                         Order Now
                                     </Button>
