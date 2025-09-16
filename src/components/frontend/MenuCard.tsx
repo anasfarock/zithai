@@ -94,7 +94,7 @@ export const Menu = () => {
             <div className="mx-auto max-w-screen-2xl pt-2 pb-16 md:pt-4 md:pb-20 overflow-visible">
                 <div className="grid grid-cols-1 gap-16 px-4 sm:px-6 lg:px-8 overflow-visible">
                     {/* Cake Card 1 */}
-                    <div className="rounded-3xl p-8 md:p-12 bg-white hover:bg-[#ff7033] text-black hover:text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+                    <div className="group rounded-3xl p-8 md:p-12 bg-white hover:bg-[#ff7033] text-black hover:text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Image column */}
                             <div className="relative lg:h-96 order-2 lg:order-1">
@@ -127,19 +127,16 @@ export const Menu = () => {
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                                    <Button
-                                        size="lg"
-                                        className="bg-black text-white hover:bg-white hover:text-black rounded-full transition-colors duration-300"
-                                    >
+                                    <button className="text-black font-medium text-lg transition-all duration-300 ease-in-out group-hover:bg-white group-hover:text-black px-0 py-0 group-hover:px-6 group-hover:py-3 group-hover:rounded-full">
                                         Order Now
-                                    </Button>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     {/* Cake Card 2 */}
-                    <div className="rounded-3xl p-8 md:p-12 bg-white hover:bg-[#ffe6af] text-black relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+                    <div className="group rounded-3xl p-8 md:p-12 bg-white hover:bg-[#ffe6af] text-black relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Text column */}
                             <div className="space-y-6 relative z-10 order-1">
@@ -151,12 +148,9 @@ export const Menu = () => {
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                                    <Button
-                                        size="lg"
-                                        className="bg-black text-white hover:bg-black/80 rounded-full transition-colors duration-300"
-                                    >
+                                    <button className="text-black font-medium text-lg transition-all duration-300 ease-in-out group-hover:bg-black group-hover:text-white px-0 py-0 group-hover:px-6 group-hover:py-3 group-hover:rounded-full">
                                         Order Now
-                                    </Button>
+                                    </button>
                                 </div>
                             </div>
                             {/* Image column */}
@@ -184,7 +178,7 @@ export const Menu = () => {
                     </div>
 
                     {/* Cake Card 3 */}
-                    <div className="rounded-3xl p-8 md:p-12 bg-white hover:bg-[#ff7033] text-black hover:text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+                    <div className="group rounded-3xl p-8 md:p-12 bg-white hover:bg-[#ff7033] text-black hover:text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Image column */}
                             <div className="relative lg:h-96 order-2 lg:order-1">
@@ -217,12 +211,9 @@ export const Menu = () => {
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                                    <Button
-                                        size="lg"
-                                        className="bg-black text-white hover:bg-white hover:text-black rounded-full transition-colors duration-300"
-                                    >
+                                    <button className="text-black font-medium text-lg transition-all duration-300 ease-in-out group-hover:bg-white group-hover:text-black px-0 py-0 group-hover:px-6 group-hover:py-3 group-hover:rounded-full">
                                         Order Now
-                                    </Button>
+                                    </button>
                                 </div>
                             </div>
                         </div>
