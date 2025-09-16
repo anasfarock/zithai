@@ -94,10 +94,10 @@ export const Menu = () => {
             <div className="mx-auto max-w-screen-2xl pt-2 pb-16 md:pt-4 md:pb-20 overflow-visible">
                 <div className="grid grid-cols-1 gap-16 px-4 sm:px-6 lg:px-8 overflow-visible">
                     {/* Cake Card 1 */}
-                    <div className="group rounded-3xl p-8 md:p-12 bg-white hover:bg-[#ff7033] text-black hover:text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+                    <div className="group rounded-[2rem] p-8 md:p-12 bg-white hover:bg-[#ff7033] text-black hover:text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Image column */}
-                            <div className="relative lg:h-96 order-2 lg:order-1">
+                            <div className="relative lg:h-96 order-1 lg:order-1">
                                 {/* Mobile image */}
                                 <div className="lg:hidden relative h-64 w-full">
                                     <Image
@@ -118,7 +118,7 @@ export const Menu = () => {
                                 </div>
                             </div>
                             {/* Text column */}
-                            <div className="space-y-6 order-1 lg:order-2">
+                            <div className="space-y-6 order-2 lg:order-2">
                                 <h2 className="text-4xl md:text-5xl font-bold transition-colors duration-300">
                                     Chocolate Delight
                                 </h2>
@@ -126,7 +126,7 @@ export const Menu = () => {
                                     Rich chocolate cake with layers of smooth ganache and fresh berries. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                 </p>
 
-                                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                                <div className="flex flex-col sm:flex-row gap-4 pt-4 pb-8 lg:pb-0">
                                     <button className="text-black font-medium text-lg transition-all duration-300 ease-in-out group-hover:bg-white group-hover:text-black px-0 py-0 group-hover:px-6 group-hover:py-3 group-hover:rounded-full">
                                         Order Now
                                     </button>
@@ -136,10 +136,10 @@ export const Menu = () => {
                     </div>
 
                     {/* Cake Card 2 */}
-                    <div className="group rounded-3xl p-8 md:p-12 bg-white hover:bg-[#ffe6af] text-black relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+                    <div className="group rounded-[2rem] p-8 md:p-12 bg-white hover:bg-[#ffe6af] text-black relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Text column */}
-                            <div className="space-y-6 relative z-10 order-1">
+                            <div className="space-y-6 relative z-10 order-2 lg:order-1">
                                 <h2 className="text-4xl md:text-5xl font-bold transition-colors duration-300">
                                     Berry Bliss
                                 </h2>
@@ -147,14 +147,14 @@ export const Menu = () => {
                                     Light vanilla sponge topped with fresh seasonal berries and cream. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 </p>
 
-                                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                                <div className="flex flex-col sm:flex-row gap-4 pt-4 pb-8 lg:pb-0">
                                     <button className="text-black font-medium text-lg transition-all duration-300 ease-in-out group-hover:bg-black group-hover:text-white px-0 py-0 group-hover:px-6 group-hover:py-3 group-hover:rounded-full">
                                         Order Now
                                     </button>
                                 </div>
                             </div>
                             {/* Image column */}
-                            <div className="relative lg:h-96 order-2">
+                            <div className="relative lg:h-96 order-1 lg:order-2">
                                 {/* Mobile image */}
                                 <div className="lg:hidden relative h-64 w-full">
                                     <Image
@@ -178,10 +178,10 @@ export const Menu = () => {
                     </div>
 
                     {/* Cake Card 3 */}
-                    <div className="group rounded-3xl p-8 md:p-12 bg-white hover:bg-[#ff7033] text-black hover:text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+                    <div className="group rounded-[2rem] p-8 md:p-12 bg-white hover:bg-[#ff7033] text-black hover:text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Image column */}
-                            <div className="relative lg:h-96 order-2 lg:order-1">
+                            <div className="relative lg:h-96 order-1 lg:order-1">
                                 {/* Mobile image */}
                                 <div className="lg:hidden relative h-64 w-full">
                                     <Image
@@ -202,7 +202,7 @@ export const Menu = () => {
                                 </div>
                             </div>
                             {/* Text column */}
-                            <div className="space-y-6 relative z-10 order-1 lg:order-2">
+                            <div className="space-y-6 relative z-10 order-2 lg:order-2">
                                 <h2 className="text-4xl md:text-5xl font-bold transition-colors duration-300">
                                     Decadent Tiramisu
                                 </h2>
@@ -210,7 +210,7 @@ export const Menu = () => {
                                     Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 </p>
 
-                                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                                <div className="flex flex-col sm:flex-row gap-4 pt-4 pb-8 lg:pb-0">
                                     <button className="text-black font-medium text-lg transition-all duration-300 ease-in-out group-hover:bg-white group-hover:text-black px-0 py-0 group-hover:px-6 group-hover:py-3 group-hover:rounded-full">
                                         Order Now
                                     </button>
