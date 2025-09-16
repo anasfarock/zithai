@@ -1,11 +1,86 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image"
-import React from "react"
+import React, { useEffect, useRef, useState } from "react"
 
 import { TextSection } from "./ui/section";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLeaf, faWheatAlt } from '@fortawesome/free-solid-svg-icons'
 import { Button, buttonVariants } from "./ui/button";
 import Link from "next/link";
+
+const CakeCard = ({ children, bgColor, index, keepTextBlack = false }: { children: React.ReactNode, bgColor: string, index: number, keepTextBlack?: boolean }) => {
+    const [isInView, setIsInView] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+    const cardRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 1024); // lg breakpoint
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    useEffect(() => {
+        if (!isMobile) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setIsInView(true);
+                    } else {
+                        setIsInView(false);
+                    }
+                });
+            },
+            {
+                threshold: 0.3, // Trigger when 30% of the card is visible
+                rootMargin: '0px 0px -100px 0px' // Add some offset
+            }
+        );
+
+        if (cardRef.current) {
+            observer.observe(cardRef.current);
+        }
+
+        return () => {
+            if (cardRef.current) {
+                observer.unobserve(cardRef.current);
+            }
+        };
+    }, [isMobile]);
+
+    const shouldShowHoverState = isMobile ? isInView : false;
+
+    // Determine text color based on background and keepTextBlack prop
+    const getTextColor = () => {
+        if (keepTextBlack) return 'text-black';
+        if (isMobile) {
+            return shouldShowHoverState ? 'text-white' : 'text-black';
+        }
+        return 'text-black hover:text-white';
+    };
+
+    return (
+        <div
+            ref={cardRef}
+            className={`group rounded-[2rem] p-8 md:p-12 relative overflow-visible transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer
+                ${isMobile
+                    ? (shouldShowHoverState
+                        ? `${bgColor} ${getTextColor()} scale-105 shadow-2xl`
+                        : `bg-white ${getTextColor()}`
+                    )
+                    : `bg-white hover:${bgColor} ${getTextColor()}`
+                }`}
+        >
+            {children}
+        </div>
+    );
+};
 
 const MenuCard = (props: { image: StaticImageData, text: string, href: string }) => {
     return (
@@ -94,7 +169,7 @@ export const Menu = () => {
             <div className="mx-auto max-w-screen-2xl pt-2 pb-16 md:pt-4 md:pb-20 overflow-visible">
                 <div className="grid grid-cols-1 gap-16 px-4 sm:px-6 lg:px-8 overflow-visible">
                     {/* Cake Card 1 */}
-                    <div className="group rounded-[2rem] p-8 md:p-12 bg-white hover:bg-[#ff7033] text-black hover:text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+                    <CakeCard bgColor="bg-[#ff7033]" index={0}>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Image column */}
                             <div className="relative lg:h-96 order-1 lg:order-1">
@@ -122,33 +197,33 @@ export const Menu = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold transition-colors duration-300">
                                     Chocolate Delight
                                 </h2>
-                                <p className="text-lg leading-relaxed text-black/80 group-hover:text-white/80 transition-colors duration-300">
+                                <p className="text-lg leading-relaxed opacity-80 transition-colors duration-300">
                                     Rich chocolate cake with layers of smooth ganache and fresh berries. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4 pb-8 lg:pb-0">
-                                    <button className="text-black font-medium text-lg transition-all duration-300 ease-in-out group-hover:bg-white group-hover:text-black px-0 py-0 group-hover:px-6 group-hover:py-3 group-hover:rounded-full">
+                                    <button className="font-medium text-lg transition-all duration-300 ease-in-out lg:group-hover:bg-white lg:group-hover:text-black px-0 py-0 lg:group-hover:px-6 lg:group-hover:py-3 lg:group-hover:rounded-full">
                                         Order Now
                                     </button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </CakeCard>
 
                     {/* Cake Card 2 */}
-                    <div className="group rounded-[2rem] p-8 md:p-12 bg-white hover:bg-[#ffe6af] text-black relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+                    <CakeCard bgColor="bg-[#ffe6af]" index={1} keepTextBlack={true}>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Text column */}
                             <div className="space-y-6 relative z-10 order-2 lg:order-1">
                                 <h2 className="text-4xl md:text-5xl font-bold transition-colors duration-300">
                                     Berry Bliss
                                 </h2>
-                                <p className="text-lg leading-relaxed text-black/80 transition-colors duration-300">
+                                <p className="text-lg leading-relaxed opacity-80 transition-colors duration-300">
                                     Light vanilla sponge topped with fresh seasonal berries and cream. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4 pb-8 lg:pb-0">
-                                    <button className="text-black font-medium text-lg transition-all duration-300 ease-in-out group-hover:bg-black group-hover:text-white px-0 py-0 group-hover:px-6 group-hover:py-3 group-hover:rounded-full">
+                                    <button className="font-medium text-lg transition-all duration-300 ease-in-out lg:group-hover:bg-black lg:group-hover:text-white px-0 py-0 lg:group-hover:px-6 lg:group-hover:py-3 lg:group-hover:rounded-full">
                                         Order Now
                                     </button>
                                 </div>
@@ -175,10 +250,10 @@ export const Menu = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </CakeCard>
 
                     {/* Cake Card 3 */}
-                    <div className="group rounded-[2rem] p-8 md:p-12 bg-white hover:bg-[#ff7033] text-black hover:text-white relative overflow-visible transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+                    <CakeCard bgColor="bg-[#ff7033]" index={2}>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             {/* Image column */}
                             <div className="relative lg:h-96 order-1 lg:order-1">
@@ -206,18 +281,18 @@ export const Menu = () => {
                                 <h2 className="text-4xl md:text-5xl font-bold transition-colors duration-300">
                                     Decadent Tiramisu
                                 </h2>
-                                <p className="text-lg leading-relaxed text-black/80">
+                                <p className="text-lg leading-relaxed opacity-80 transition-colors duration-300">
                                     Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4 pt-4 pb-8 lg:pb-0">
-                                    <button className="text-black font-medium text-lg transition-all duration-300 ease-in-out group-hover:bg-white group-hover:text-black px-0 py-0 group-hover:px-6 group-hover:py-3 group-hover:rounded-full">
+                                    <button className="font-medium text-lg transition-all duration-300 ease-in-out lg:group-hover:bg-white lg:group-hover:text-black px-0 py-0 lg:group-hover:px-6 lg:group-hover:py-3 lg:group-hover:rounded-full">
                                         Order Now
                                     </button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </CakeCard>
                 </div>
             </div>
         </>
